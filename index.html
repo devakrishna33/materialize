@@ -8,8 +8,13 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <style>
-      .box{
-        height:300px;
+        .row > div{
+        padding: 10px;
+        background: #ddd;
+        border: 1px solid #fff;
+      }
+      .row{
+        margin: 40px auto;
       }
     </style>
     <!-- Compiled and minified JavaScript -->
@@ -17,17 +22,31 @@
   </head>
   <body>
     <div class="container">
-      <h2>Icons</h2>
-      <i class="material-icons grey-text">cloud</i>
-      <i class="material-icons red-text">error</i>
-      <i class="material-icons yellow-text text-darken-4">warning</i>
-      <h2>Buttons with Icons</h2>
-      <button class="btn">Send<i class="material-icons right">send</i></button>
-      <button class="btn waves-effect waves-light">Email<i class="material-icons right">email</i></button>
-      <h2>Floating buttons with icons</h2>
-      <button class="btn-floating pulse red"><i class="material-icons">add</i></button>
-      <button class="btn-floating pulse yellow "><i class="material-icons">remove</i></button>
-      <button class="btn-floating pulse green"><i class="material-icons">edit</i></button>
+      <h2>Grids</h2>
+      <div class="row">
+        <div class="col s2">Content</div>
+        <div class="col s2">Content</div>
+        <div class="col s2">Content</div>
+        <div class="col s2">Content</div>
+        <div class="col s2">Content</div>
+        <div class="col s2">Content</div>
+      </div>
+      <div class="row">
+        <div class="col s2 m6">Content</div>
+        <div class="col s2 m6">Content</div>
+        <div class="col s2 m6">Content</div>
+        <div class="col s2 m6">Content</div>
+        <div class="col s2 m6">Content</div>
+        <div class="col s2 m6">Content</div>
+      </div>
+      <div class="row">
+        <div class="col s2 m6 l12">Content</div>
+        <div class="col s2 m6 l12">Content</div>
+        <div class="col s2 m6 l12">Content</div>
+        <div class="col s2 m6 l12">Content</div>
+        <div class="col s2 m6 l12">Content</div>
+        <div class="col s2 m6 l12">Content</div>
+      </div>
     </div>
   </body>
 </html>
