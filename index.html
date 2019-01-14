@@ -12,34 +12,15 @@
   </head>
   <body>
     <div class="container">
-      <h2>Cards</h2>
-      <div class="row">
-        <div class="col l6 s12">
-          <div class="card">
-            <div class="card-image">
-              <img src="./img/article1.jpg" alt="Doctor who">
-              <a href="#" class="halfway-fab btn-floating pulse pink"><i class="material-icons">favorite</i></a>
-            </div>
-            <div class="card-content">
-              <div class="card-title">The women who fell to Earth.</div>
-              <p>
-                Jodie Whittaker finally takes over as the first woman to play the Doctor in the long-running TV series. But that's not all that's new as the show make a welcome return to our screens.
-              </p>
-            </div>
-          </div>
+      <h2>Modals</h2>
+      <a href="#terms" class="btn modal-trigger">Terms and conditions</a>
+      <div class="modal" id="terms">
+        <div class="modal-content">
+          <h4>Terms and Conditions</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
-        <div class="col l6 s12">
-          <div class="card">
-            <div class="card-image">
-              <img src="./img/peterCapaldi.jpg" alt="Doctor who">
-              <a href="#" class="halfway-fab btn-floating pulse pink"><i class="material-icons">favorite</i></a>
-            </div>
-            <div class="card-content">
-              <div class="card-title">Peter Capaldi.</div>
-              <p>
-                Peter Dougan Capaldi (born 14 April 1958[1]) played the Twelfth Doctor from 2013 to 2017, beginning with an appearance at the conclusion of The Time of the Doctor, continuing from Deep Breath to Twice Upon a Time.
-            </div>
-          </div>
+        <div class="modal-footer">
+          <div class="modal-close btn">Agree and Close</div>
         </div>
       </div>
     </div>
@@ -48,6 +29,9 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
+      $(document).ready(function() {
+        $('.modal').modal();
+      });
     </script>
   </body>
 </html>
