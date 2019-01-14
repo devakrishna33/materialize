@@ -10,17 +10,221 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <style>
+      .photo{
+        margin-top: 2%;
+      }
+      .tabs .tab a:focus, .tabs .tab a:focus.active {
+            background-color: white;
+            outline: none;
+        }
+        .tabs .indicator{
+          background-color: black;
+        }
     </style>
   </head>
   <body>
-    <div class="container">
+    <!-- Navbar -->
+    <header>
+      <div class="navbar-fixed">
+        <nav class="nav-wrapper indigo">
+          <div class="container">
+            <a href="#" class="brand-logo">Doctor Who??</a>
+            <a href="#" data-target="mobile-links" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#photos">Photos</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a class="btn-floating pulse red lighten-1 tooltipped" data-tooltip="Google Plus" href="https://plus.google.com/+DevaKrishna33">
+                <i class="fab fa-google-plus-g"></i>
+              </a></li>
+              <li><a class="btn-floating pulse red lighten-1 tooltipped" data-tooltip="Github" href="https://github.com/devakrishna33">
+                <i class="fab fa-github"></i>
+              </a></li>
+              <li><a class="btn-floating pulse red lighten-1 tooltipped" data-tooltip="LinkedIn" href="www.linkedin.com/in/deva-krishna">
+                <i class="fab fa-linkedin-in"></i>
+              </a></li>
+            </ul>
+
+          </div>
+        </nav>
+      </div>
+    </header>
+    <ul class="sidenav white-text" id="mobile-links">
+      <li><a href="#photos">Photos</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Photos -->
+    <div class="container scrollspy" id="photos">
+      <div class="row">
+        <div class="col l4 s12 photo">
+          <img src="./img/davidTennant.jpg" class="responsive-img materialboxed" alt="davidTennant">
+        </div>
+        <div class="col s12 l7 offset-l1">
+          <h3 class="indigo-text lighten-text-4">David Tennant</h3>
+          <p>David John Tennant (né McDonald; born 18 April 1971) is a Scottish actor and voice actor. He is best known for his roles as the Tenth Doctor in the British television series Doctor Who, Alec Hardy in Broadchurch, Giacomo Casanova in the TV serial Casanova, Kilgrave in Jessica Jones, and Barty Crouch, Jr. in the film Harry Potter and the Goblet of Fire. In addition to his appearances on screen, he has worked as a voice actor.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l4 s12 photo push-l7">
+          <img src="./img/mattSmith.jpg" class="responsive-img materialboxed" alt="davidTennant">
+        </div>
+        <div class="col s12 l7 pull-l5 right-align">
+          <h3 class="indigo-text lighten-text-4">Matt Smith</h3>
+          <p>The Eleventh Doctor is an incarnation of the Doctor, the protagonist of the BBC science fiction television programme Doctor Who. He is played by Matt Smith,[4] in three series as well as seven specials, over an almost four-year-long period. As with previous incarnations of the Doctor, the character has also appeared in other Doctor Who multimedia.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l4 s12 photo">
+          <img src="./img/peterCapaldi.jpg" class="responsive-img materialboxed" alt="davidTennant">
+        </div>
+        <div class="col s12 l7 offset-l1">
+          <h3 class="indigo-text lighten-text-4">Peter Capaldi</h3>
+          <p>The Twelfth Doctor is an incarnation of the Doctor, the protagonist of the BBC science fiction television programme Doctor Who. He is portrayed by Scottish actor Peter Capaldi.[1] Within the series' narrative, the Doctor is a time travelling, humanoid alien from a race known as the Time Lords. At the end of life, the Doctor can regenerate his body, and in doing so gain a new physical appearance, and with it a distinct new personality; this plot mechanism has allowed the Doctor to be portrayed by a series of actors over the decades since the programme's inception in 1963. Capaldi's portrayal of the Doctor is a spiky, brusque, contemplative, and pragmatic character who conceals his emotions in the course of making tough and sometimes ruthless decisions.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col l4 s12 photo push-l7">
+          <img src="./img/jodieWhittaker.jpg" class="responsive-img materialboxed" alt="davidTennant">
+        </div>
+        <div class="col s12 l7 pull-l5 right-align">
+          <h3 class="indigo-text lighten-text-4">Jodie Whittaker</h3>
+          <p>The Thirteenth Doctor is the current incarnation of the Doctor, the fictional protagonist of the BBC science fiction television programme Doctor Who. She is portrayed by English actress Jodie Whittaker, the first woman to portray the character in the series. In the show's narrative, the Doctor is a time travelling, humanoid alien from a race known as "the Time Lords". To account for actors' departure from the series, the programme introduced the narrative concept of regeneration, a means for a Time Lord to gain a new appearance and a distinct new personality when the Doctor approaches the end of the current incarnation.</p>
+        </div>
+      </div>
     </div>
-    <!--Jquey-->
+
+    <!--Parallax-->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="./img/allDoctors.jpg" alt="allDoctors" class="responsive-img">
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="container scrollspy" id="about">
+      <div class="row">
+        <div class="col s12 l5">
+          <h2 class="indigo-text">About</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="col s12 l6 offset-l1">
+          <ul class="tabs">
+            <li class="tab col s6 white"><a href="#present" class="indigo-text">Present</a></li>
+            <li class="tab col s6"><a href="#first" class="indigo-text">First</a></li>
+          </ul>
+        </div>
+        <div class="col s12 l6 offset-l1" id="present">
+          <p class="flow-text indigo-text">PRESENT</p>
+          <p>Whittaker will replace the current Doctor (the 12th in the series's history), played by Peter Capaldi, in an upcoming Christmas special before taking on the role fully in the upcoming 11th series of the long-running British science fiction show, which is expected to air in late 2018.</p>
+        </div>
+        <div class="col s12 l6 offset-l1" id="first">
+          <p class="flow-text indigo-text">FIRST</p>
+          <p>The First Doctor is the initial incarnation of the Doctor, the protagonist of the BBC science fiction television series Doctor Who. He was portrayed by the actor William Hartnell from 1963 to 1966. Hartnell reprised the role once, in the tenth anniversary story The Three Doctors.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Parallax-->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="./img/tardis.jpg" alt="allDoctors" class="responsive-img">
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="container scrollspy" id="contact">
+      <div class="row">
+        <div class="col s12 l5">
+          <h2 class="indigo-text">Get in Touch.....</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div class="col s12 l5 offset-l2">
+          <br/>
+          <form action="">
+            <div class="input-field">
+              <i class="material-icons prefix">email</i>
+              <input type="email" id="email">
+              <label for="email">Your Email...</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">message</i>
+              <textarea name="message" class="materialize-textarea" id="message" cols="30" rows="10"></textarea>
+              <label for="message">Your message ....</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">date_range</i>
+              <input type="text" id="date" class="datepicker">
+              <label for="date">Choose a Date....</label>
+            </div>
+            <div class="input-field">
+              <p>Did you like it?</p>
+              <p>
+                <label>
+                  <input name="group1" type="radio" />
+                  <span>Yes</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input name="group1" type="radio" />
+                  <span>No</span>
+                </label>
+              </p>
+            </div>
+            <div class="input-field">
+              <button class="btn-floating red align-center">
+                <i class="material-icons">send</i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="page-footer grey darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 l5">
+            <h5>About Me......</h5>
+            <p class="floating-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+          <div class="col s12 l5 offset-l2">
+            <h5>Connect</h5>
+            <p class="floating-text">
+              <ul>
+                <li><a href="https://plus.google.com/+DevaKrishna33">Google +</a></li>
+                <li><a href="https://github.com/devakrishna33">GitHub</a></li>
+                <li><a href="www.linkedin.com/in/deva-krishna">LinkedIn</a></li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright grey darken-4">
+        <div class="container center-align">
+          &copy; Devakrishna 2019
+        </div>
+      </div>
+    </footer>
+    <!--Jquery-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
       $(document).ready(function() {
+        $('.sidenav').sidenav();
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tabs').tabs();
+        $('.datepicker').datepicker();
+        $('.tooltipped').tooltip();
+        $(".scrollspy").scrollSpy();
       });
     </script>
   </body>
