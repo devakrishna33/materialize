@@ -2,7 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Materialize</title>
+    <title>The Site</title>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!--Import Google Icon Font-->
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
@@ -12,17 +14,6 @@
   </head>
   <body>
     <div class="container">
-      <h2>Modals</h2>
-      <a href="#terms" class="btn modal-trigger">Terms and conditions</a>
-      <div class="modal" id="terms">
-        <div class="modal-content">
-          <h4>Terms and Conditions</h4>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
-        <div class="modal-footer">
-          <div class="modal-close btn">Agree and Close</div>
-        </div>
-      </div>
     </div>
     <!--Jquey-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -30,7 +21,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
       $(document).ready(function() {
-        $('.modal').modal();
       });
     </script>
   </body>
