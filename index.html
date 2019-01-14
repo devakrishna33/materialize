@@ -8,42 +8,46 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <style>
-      .badge{
-        position: relative;
-        top: 20px;
-        right: 20px;
-      }
     </style>
   </head>
   <body>
-    <nav class="nav-wraper blue">
-      <div class="container">
-        <a href="#" class="brand-logo">Site title</a>
-        <a href="#" class="sidenav-trigger" data-target="my-nav"><i class="material-icons">menu</i></a>
-        <ul class="hide-on-med-and-down right">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Login</a></li>
-          <li><a href="#" class="btn-floating blue darken-1 z-depth-0 pulse"><i class="material-icons">notifications</i></a></li>
-          <li><span class="badge new red lighten-2">5</span></li>
-        </ul>
+    <div class="container">
+      <h2>Cards</h2>
+      <div class="row">
+        <div class="col l6 s12">
+          <div class="card">
+            <div class="card-image">
+              <img src="./img/article1.jpg" alt="Doctor who">
+              <a href="#" class="halfway-fab btn-floating pulse pink"><i class="material-icons">favorite</i></a>
+            </div>
+            <div class="card-content">
+              <div class="card-title">The women who fell to Earth.</div>
+              <p>
+                Jodie Whittaker finally takes over as the first woman to play the Doctor in the long-running TV series. But that's not all that's new as the show make a welcome return to our screens.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col l6 s12">
+          <div class="card">
+            <div class="card-image">
+              <img src="./img/peterCapaldi.jpg" alt="Doctor who">
+              <a href="#" class="halfway-fab btn-floating pulse pink"><i class="material-icons">favorite</i></a>
+            </div>
+            <div class="card-content">
+              <div class="card-title">Peter Capaldi.</div>
+              <p>
+                Peter Dougan Capaldi (born 14 April 1958[1]) played the Twelfth Doctor from 2013 to 2017, beginning with an appearance at the conclusion of The Time of the Doctor, continuing from Deep Breath to Twice Upon a Time.
+            </div>
+          </div>
+        </div>
       </div>
-    </nav>
-    <ul id="my-nav" class="sidenav">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Login</a></li>
-    </ul>
+    </div>
     <!--Jquey-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
-      $(document).ready(function(){
-        $('.sidenav').sidenav();
-      });
     </script>
   </body>
 </html>
